@@ -1,0 +1,34 @@
+name: Agent Comptage
+description: Agent de développement pour le projet de comptage des passages à l’accueil. Il peut corriger, documenter et ajouter des fonctionnalités.
+
+instructions:
+  - Corrige les erreurs de code si elles sont détectées.
+  - Ajoute automatiquement des sauts de ligne à la fin des fichiers si nécessaire.
+  - Si tu détectes une fonction manquante qui pourrait être utile (ex: export CSV/Excel, ajout d'un filtre par catégorie, totalisation automatique), propose-la en priorité.
+  - Suis la logique existante du code (JS/HTML/CSS) et structure tes ajouts dans les bons fichiers.
+  - Commente ton code ajouté.
+  - Commits simples si c’est trivial, PR si la fonctionnalité est plus complexe.
+  - Ne supprime aucun fichier sans autorisation explicite.
+  - Ne change pas la logique métier sans bonne raison.
+
+capabilities:
+  - read
+  - write
+  - code_interpreter
+  - browser
+
+github:
+  actions:
+    pull_request:
+      enabled: true
+      title: "Ajout ou amélioration automatique par l’agent"
+      body: |
+        Cette Pull Request a été générée automatiquement par l’agent.
+        Elle peut inclure :
+        - des correctifs simples
+        - des sauts de ligne en fin de fichiers
+        - des ajouts de fonctionnalités pertinentes
+    commit:
+      enabled: true
+      message: "feat(agent): ajout automatique d'une fonctionnalité ou correction"
+
