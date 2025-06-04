@@ -346,20 +346,7 @@ function updateCountersFromDB() {
 document.addEventListener('DOMContentLoaded', function() {
     updateCountersFromDB();
 });
-	function incrementCounter(counterId) {
-	    const counterSpan = document.getElementById(counterId);
-	    const currentCount = parseInt(counterSpan.innerText);
-	    const inputField = event.target.previousElementSibling; // Sélectionne le champ d'entrée précédent le bouton
-	    const inputValue = parseInt(inputField.value);
-	    let newCount;
-	    if(inputValue > 0){
-	    	newCount = currentCount + inputValue;
-	    } else {
-	    	newCount = currentCount + 1;
-	    }
-	    
-	    counterSpan.innerText = newCount;
-	}	
+
 	
 
 
