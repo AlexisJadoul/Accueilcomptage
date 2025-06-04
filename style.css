@@ -1,0 +1,151 @@
+/* Styles généraux */
+.themed-grid-col,
+.themed-grid-col-pink{
+    width: 19.6%;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    padding-left: 2rem;
+    border: 1px solid rgba(86, 61, 124, .2);
+    border-right-style: none;
+}
+.themed-grid-col-grey {
+    width: 19.65%;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    padding-left: 2rem;
+    border: 1px solid rgba(86, 61, 124, .2);
+    border-right-style: none;
+}
+
+
+.themed-grid-col {
+    background-color: rgba(86, 61, 124, .15);
+}
+
+.themed-grid-col-pink {
+    background-color: rgba(255, 99, 81, .15);
+    border-color: rgba(255, 99, 81, .2);
+}
+
+.themed-grid-col-grey {
+    background-color: rgba(114, 114, 114, .15);
+    border-color: rgba(114, 114, 114, .2);
+}
+
+/* Dispositifs en mode paysage (tablettes entre 768px et 1366px de largeur) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (orientation: landscape) {
+    .themed-grid-col,
+    .themed-grid-col-pink {
+        width: 25%;
+    }
+    .themed-grid-col-grey {
+        display: none;
+    }
+    .titre-tab{
+    width:  102.15% !important;
+    }
+
+    .titre-phys{
+        width: 50% !important;
+    }
+    .titre-tel{
+        width: 50%;
+    }
+    .titre-exp{
+        display: none;
+    }
+    
+}
+
+/* Pour les PC ou les écrans de PC portable (larges de plus de 1024px) */
+@media only screen and (min-width: 1367px) {
+    .themed-grid-col  {
+        width: 19.65%;
+    },
+    .themed-grid-col-pink{
+        width: 20%;
+    },
+    .themed-grid-col-grey {
+        width: 20%;
+    }
+    .titre-tab{
+        width:  100% !important;
+    }
+
+    .titre-phys{
+        width: 40% !important;
+    }
+    .titre-tel{
+        width: 40%;
+    }
+    .titre-exp{
+        width: 20% !important;
+    }
+}
+.buttonCalc{
+    
+      display: inline;
+      width: 70px;
+      text-align: center;
+      /*border-radius: 5px;
+      height: 30px;
+      border-width: 0px;*/
+}
+
+
+
+.inc{
+      vertical-align: sub;
+      height: 50px;
+      width: 50px;
+      border-radius: 30px;  
+      background-color: #005d68;
+      border-width: 0px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+
+}
+
+.inc:hover{
+
+      background-color: #008b9b;
+
+}
+
+button{
+
+    line-height: 2rem;
+
+}
+
+#validate{ margin-top:  0.75rem; }
+
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: #000;
+  border-radius: 10px;
+  background-color: rgb(247, 168, 35);
+  
+  
+}
+
+.styled:hover {
+  background-color: rgb(249, 176, 57);
+}
+
+h6{
+    text-align: center;
+    margin-bottom: 0.1rem;
+    font-weight: 600;
+}
+
+h5{
+    margin-bottom: 0.1rem;
+    text-decoration: underline;
+}
