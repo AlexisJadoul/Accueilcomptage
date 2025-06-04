@@ -45,10 +45,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 $stmt = $mysqli->prepare("UPDATE button_clicks SET click_count = ? WHERE button_name = ? AND service_name = ? AND click_date = ?");
                 $stmt->bind_param("isss", $clickCount, $buttonName, $serviceName, $currentDate);
             }
-        } else {
-            $clickCount = 1;
-            $stmt = $mysqli->prepare("INSERT INTO button_clicks (button_name, service_name, click_date, click_count) VALUES (?, ?, ?, ?)");
-            $stmt->bind_param("sssi", $buttonName, $serviceName, $currentDate, $clickCount);
+      } else {
+            $clickCount = ($jsonData['inputValue'] > 0) ? $jsonData['inputValue'] : 1;
+            $stmt = $mysqli->prepare("INSERT INTO button_clicks (button_name, service_name, click_date, click_count) VALUES (?, ?, ?, ?)");␊
+            $stmt->bind_param("sssi", $buttonName, $serviceName, $currentDate, $clickCount);␊
         }
 
         if ($stmt->execute()) {
