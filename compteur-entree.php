@@ -1,5 +1,5 @@
 <?php
-
+/*
 include 'connect.php';
 include 'config.php';
 
@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }else{
 
             echo 'ok';
-        }*/
+        }
     }
 
 }   
@@ -73,12 +73,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $stmt->close();
         $mysqli->close();
     } else {
-        echo "Button data is missing";
+
     }
 } else {
     echo "Invalid request method";
 }
 
 
-
+*/
 ?>
